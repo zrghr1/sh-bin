@@ -16,7 +16,7 @@ let
 in
 {
   options.programs.sh-bin = {
-    enable = "Enable sh-bin scripts";
+    enable = mkEnableOption "Enable sh-bin scripts";
   };
 
   config = mkIf cfg.enable {
