@@ -6,7 +6,7 @@ let
   package = pkgs.stdenv.mkDerivation {
     pname = "sh-bin";
     version = "1.0.0";
-    src = ../src;
+    src = ../src/.;
     installPhase = ''
       mkdir -p $out/bin
       cp src/* $out/bin/
